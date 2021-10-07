@@ -42,14 +42,14 @@ function init() {
     var arrCube = [];
 
     var numerodecubos = 8; // aqui creamos una variable en donde de asignara el numero de cubos que salgan
-    var t = 2.2;           // esta variable lo que hace es dar el tamaño del cubo 
+    var t = 2.2;  // esta variable lo que hace es dar el tamaño del cubo 
 
-    for (var i = 0; i < numerodecubos; i++) {         // aqui  creamos un ciclo for para que cuando se lea ese numero asignado vaya haciendo el ciclo haste que llegue a el.
+    for (var i = 0; i < numerodecubos; i++) { // aqui  creamos un ciclo for para que cuando se lea ese numero asignado vaya haciendo el ciclo haste que llegue a el.
 
             arrCube.push(cubo(t,t,t,0,0,0,'Basic',(i==0 ? 'red':i==1 ? 'green':i==2 ?'blue':'purple'), false)); // el cubo inicia en el origen como vemos ponemos las coordenadas en el origen  y para los primeros 3 cubos le saignamos los colores verde , azul y rojo y se le asigna un cuarto color para el resto de cubos si este pasa de 3.
 
 
-            arrCube[i].geometry.translate(0+i*t,0+i*t,0)  //en esta linea de codigo lo que nos permite con el translate es que se posicionen los cubos que ya estan creados entonces como se ve las dos primeras cordenadas  que son x y y se realizara la escalera en esos ejes le asignamos la operacion (0+i*t), donde a 0 le sumamos i que es el nuemro de cubo que va asignado y te el tamaño del cubo asi se iran cuadrando en escalera
+            arrCube[i].geometry.translate(0+i*t,0+i*t,0) //en esta linea de codigo lo que nos permite con el translate es que se posicionen los cubos que ya estan creados entonces como se ve las dos primeras cordenadas  que son x y y se realizara la escalera en esos ejes le asignamos la operacion (0+i*t), donde a 0 le sumamos i que es el nuemro de cubo que va asignado y te el tamaño del cubo asi se iran cuadrando en escalera
       
         }
     
